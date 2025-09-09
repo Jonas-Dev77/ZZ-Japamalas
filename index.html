@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Arte By Rô</title>
+</head>
+
+<body>
+
+    <div class="top-background">
+        <h1 class="title">Arte by ro</h1>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/arteby_ro/" target="_blank">
+                <img src="./assets/instagram.svg" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5551998026699" target="_blank">
+                <img src="./assets/whatsapp.svg" alt="WhatsApp" width="30" height="30">
+            </a>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="mostrarInicio()">Início</button>
+        <button onclick="mostrarSobre()">Sobre </button>
+        <button onclick="mostrarGaleria('galeria-japa')">Japamalas</button>
+        <button onclick="mostrarGaleria('galeria-colar')">Colar de mesa</button>
+        <button onclick="mostrarComoUsar()">Como usar</button>
+        <button onclick="mostrarContato()">Contato</button>
+    </div>
+
+    <div class="section-content">
+        <div id="sobre-texto" style="display: none;">
+            O Japamala, também conhecido como mala, é um cordão de 108 contas ou seus múltiplos,
+            usado em práticas de meditação e oração, originário da Índia e adotado pelo hinduísmo e
+            budismo. O nome deriva do sânscrito "japa" (murmurar, sussurrar) e "mala" (guirlanda, colar).
+            O Japamala serve como um contador espiritual, auxiliando na recitação de mantras e na
+            concentração durante a meditação.
+        </div>
+
+        <div id="galeria-japa" style="display: none;">
+            <img src="./assets/japamala2.jpg" alt="Foto 2" width="150">
+            <img src="./assets/japamala budista 108 contas.jpg" alt="1" width="150">
+            <img src="./assets/japamala 05.jpg" alt="Foto 4" width="150">
+            <img src="./assets/japamala 06.jpg" alt="Foto 3" width="150">
+            <img src="./assets/japamala 04.jpg" alt="Foto 3" width="150">
+        </div>
+
+        <div id="galeria-colar" style="display: none;">
+            <img src="./assets/colar de mesa 02.jpg" alt="Foto 2" width="150">
+            <img src="./assets/colar de mesa 01.jpg" alt="1" width="150">
+            <img src="./assets/colar de mesa 04.jpg" alt="Foto 4" width="150">
+            <img src="./assets/colar de mesa 03.jpg" alt="Foto 3" width="150">
+            <img src="./assets/colar de mesa 05.jpg" alt="Foto 5" width="150">
+
+
+
+        </div>
+
+        <div id="como-usar-texto" style="display: none;">
+            Para usar o Japamala, segure-o com a mão direita usando o polegar e dedo médio,
+            e passe cada conta entre os dedos enquanto recita um mantra ou como as quatro
+            frases do Ho'oponopono. Comece pela conta principal e siga em sentido horário.
+        </div>
+
+        <div id="contato-texto" style="display: none;">
+            Instagram: @arteby_ro /
+            WhatsApp: (51) 99802-6699
+        </div>
+          <div class="inicio-container">
+        <div id="inicio-texto">
+            <h2>Bem-vindo ao Arte by Rô!</h2>
+            <p>Explore nossa coleção de Japamalas e Colares de Mesa feitos com carinho e dedicação.</p>
+            <p>Cada peça é única, criada para trazer beleza e significado ao seu dia a dia.</p>
+            <p>Navegue pelas seções para saber mais sobre nossos produtos e como usá-los.</p>
+            Fique à vontade para entrar em contato conosco para qualquer dúvida ou pedido especial.
+        </div>
+        <div id="frases-hooponopono">
+            <strong>As quatro frases centrais do Ho'oponopono:</strong><br><br>
+            <b>"Eu sinto muito":</b> Reconhece a responsabilidade pessoal pelas memórias que são compartilhadas e que causam dor, tanto em si mesmo quanto nos outros.<br><br>
+            <b>"Me perdoe":</b> Pede perdão pelas memórias que a pessoa carrega, assumindo a responsabilidade por tê-las atraído para si.<br><br>
+            <b>"Eu te amo":</b> Declara amor por essas memórias, pois o amor tem o poder de transmutar a energia negativa.<br><br>
+            <b>"Sou grato":</b> Agradece a oportunidade de limpar e liberar essas memórias, o que leva à cura e à libertação.
+        </div>
+
+        
+        </div>
+
+        <footer class="footer">
+            <p>© 2025 Arte by ro. Todos os direitos reservados.</p>
+        </footer>
+
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>
