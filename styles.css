@@ -250,7 +250,7 @@ button:hover {
         font-size: 25px;
         line-height: 50px;
         width: auto;
-        margin-top: 170px;
+        margin-top: 180px;
         margin-left: 10px;
     }
     .subtitle, h2 {
@@ -260,11 +260,16 @@ button:hover {
         margin-left: 10px;
 
     }
+    .social-icons img {
+        width: 160%;
+        height: 160%;
+
+        }
 
     .social-icons {
         margin-left: 10px;
-        margin-top: 200px;
-        gap: 30px;
+        margin-top: 240px;
+        gap: 20px;
         position: absolute;
     }
 
