@@ -13,34 +13,44 @@ body {
 }
 
 .top-background {
-    background-image: url('./assets/img topbackground.webp'); 
+    background-image: url('./assets/img topbackground.webp');
     background-size: cover;
     background-position: center;
-    height: 280px; /* Ajuste conforme necessário */
+    height: 280px;
+    /* Ajuste conforme necessário */
     display: flex;
     align-items: left;
     flex-direction: column;
     justify-content: left;
 
-}.title, h1 {
-    font-weight: 500;
-    font-size: 70px;
+}
+
+.title, h1 {
+    font-weight: 600;
+    font-size:70px;
     line-height: 82px;
     color: black;
     width: 400px;
-    margin-top: 130px;
+    margin-top: 140px;
     margin-left: 20px;
 }
-
+.subtitle, h2 {
+    box-shadow: rgb(21, 20, 20);
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    
+}
 .buttons {
     display: flex;
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
     align-items: center;
+    margin-top: 15px;
     margin-left: 20px;
+    justify-content: center;
 }
 
 button {
@@ -49,42 +59,122 @@ button {
     border: none;
     border-radius: 8px;
     padding: 12px 24px;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     transition: background 0.2s;
-}
-button:hover {
-    background-color: #d36604;      /* Cor ao passar o mouse */
-} 
-#inicio-texto {
-    margin-top: 20px;         /* Espaço abaixo dos botões */
-    margin-bottom: 20px;      /* Espaço antes da próxima seção */
-    padding: 24px 32px;       /* Espaço interno */
-    background: rgba(255,255,255,0.08); /* Fundo levemente transparente */
-    border-radius: 12px;      /* Cantos arredondados */
-    max-width: 800px;         /* Largura máxima */
-    color: #fff;              /* Cor do texto */
-    font-size: 20px;          /* Tamanho do texto */
-    line-height: 1.6;         /* Altura da linha */
-    text-align: left;       /* Centraliza o texto */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10); /* Sombra leve */
-}
-.inicio-container {
+    
+    
     
 }
-#inicio-texto, #frases-hooponopono {
-   
-  
+
+button:hover {
+    background-color: #d36604;
+    /* Cor ao passar o mouse */
 }
+.faq-toggle {
+  background-color: #f47905;
+  color: black;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background 0.2s;
+
+}
+
+.faq-toggle:hover {
+  background-color: #d36604;
+}
+
+.faq {
+  max-width: 800px;
+  margin: 20px auto;
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+}
+
+.faq-item {
+  margin-bottom: 16px;
+}
+
+.faq-item h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #ff8c33;
+}
+
+.faq-item p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 20px;    /* ajuste se quiser mais/menos altura */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#inicio-texto {
+    margin-top: 20px;
+    /* Espaço abaixo dos botões */
+    margin-bottom: 20px;
+    /* Espaço antes da próxima seção */
+    padding: 24px 32px;
+    /* Espaço interno */
+    background: rgba(255, 255, 255, 0.08);
+    /* Fundo levemente transparente */
+    border-radius: 12px;
+    /* Cantos arredondados */
+    max-width: 800px;
+    /* Largura máxima */
+    color: #fff;
+    /* Cor do texto */
+    font-size: 20px;
+    /* Tamanho do texto */
+    line-height: 1.6;
+    /* Altura da linha */
+    text-align: left;
+    /* Centraliza o texto */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    /* Sombra leve */
+}
+.frases-hooponopono {
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+}
+        
+.inicio-container {
+    display: flex;
+    justify-content: center ;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+    }
 
 #inicio-texto {
     text-align: center;
 }
 
 #frases-hooponopono {
-    text-align: left;
+    text-align: right;
 }
+
 .section-content {
     width: 100%;
     display: flex;
@@ -95,12 +185,14 @@ button:hover {
     padding-right: 40px;
     margin-bottom: 20px;
 }
+
 .section-content img {
     margin: 8px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
-.section-content > div {
+
+.section-content>div {
     width: 100%;
     max-width: 800px;
     margin-bottom: 20px;
@@ -110,60 +202,89 @@ button:hover {
 }
 
 .footer {
-    background: #5a3c1a;      /* Cor de fundo */
-    color: #fff;              /* Cor do texto */
-    text-align: center;       /* Centraliza o texto */
-    padding: 20px 0;          /* Espaçamento interno */
-    font-size: 12px;          /* Tamanho da fonte */
-    width: 100%; 
-    margin-top: auto; 
-    position: static;   
+    background: #5a3c1a;
+    /* Cor de fundo */
+    color: #fff;
+    /* Cor do texto */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 20px 0;
+    /* Espaçamento interno */
+    font-size: 12px;
+    /* Tamanho da fonte */
+    width: 100%;
+    margin-top: auto;
+    position: static;
     left: 0;
-    bottom: 0;         /* Ocupa toda a largura */
+    bottom: 0;
+    /* Ocupa toda a largura */
 }
+
 .social-icons {
     display: flex;
-    gap: 16px;
-    margin-top: 30px;
-    margin-left: 20px;
-   
+    gap: 40px;
+    margin-top: 200px;
+    margin-left: 1400px;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
+
 .social-icons img {
     cursor: pointer;
     transition: transform 0.2s;
+    width: 250%;
+    height: 250%;
+    color: black;
+   
 }
 .social-icons img:hover {
     transform: scale(1.1);
 }
 
 @media screen and (max-width: 600px) {
-    .title, h1 {
+
+    .title,
+    h1 {
         font-size: 25px;
         line-height: 50px;
         width: auto;
-        margin-top: 175px;
+        margin-top: 170px;
         margin-left: 10px;
     }
+    .subtitle, h2 {
+        font-size: 20px;
+        width: auto;
+        margin-top: -25px;
+        margin-left: 10px;
+
+    }
+
     .social-icons {
         margin-left: 10px;
-        margin-top: 10px;
-        gap: 10px;
+        margin-top: 200px;
+        gap: 30px;
+        position: absolute;
     }
+
     .buttons {
         flex-direction: column;
         align-items: flex-start;
     }
+
     button {
         width: 100%;
         box-sizing: border-box;
     }
+
     .section-content {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .section-content > div {
+
+    .section-content>div {
         font-size: 16px;
     }
-    
-}
 
+}

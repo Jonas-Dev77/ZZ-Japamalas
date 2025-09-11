@@ -6,61 +6,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
-        rel="stylesheet">
+    <linkhref="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Arte By Rô</title>
+    <meta name= "description" content="Descubra Japamalas e Colares de Mesa artesanais que trazem beleza, 
+    energia positiva e significado para sua casa e seu dia a dia.">
+    <script type="application/ld+json"{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O que é um Japamala?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O Japamala é um colar tradicional de 108 contas usado em práticas de meditação, oração e concentração, muito comum no hinduísmo e budismo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a diferença entre Japamala e Colar de Mesa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O Japamala é um acessório espiritual utilizado em meditações, enquanto os Colares de Mesa são peças decorativas feitas para harmonizar e embelezar ambientes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso personalizar meu colar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim! Trabalhamos com peças personalizadas, permitindo que você escolha cores, pedras e tamanhos de acordo com sua preferência."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Os Japamalas podem ser usados como acessório?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Além de seu uso espiritual, muitas pessoas usam Japamalas como colar, trazendo estilo e significado ao mesmo tempo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vocês entregam para todo o Brasil?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, realizamos envios para todo o Brasil através de transportadoras e Correios."
+      }
+    }
+  ]
+
+}
+</script>
+ </script>
 </head>
 
 <body>
 
     <div class="top-background">
         <h1 class="title">Arte by ro</h1>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/arteby_ro/" target="_blank">
-                <img src="./assets/instagram.svg" alt="Instagram" width="30" height="30">
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=5551998026699" target="_blank">
-                <img src="./assets/whatsapp.svg" alt="WhatsApp" width="30" height="30">
-            </a>
-        </div>
+        <h2 class="subtitle">Feito com Amor</h2>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/arteby_ro/" target="_blank">
+            <img src="./assets/instagram.svg" alt="Instagram" width="30" height="30">
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5551998026699" target="_blank">
+            <img src="./assets/whatsapp.svg" alt="WhatsApp" width="30" height="30">
+        </a>
     </div>
 
-    <div class="buttons">
-        <button onclick="mostrarInicio()">Início</button>
-        <button onclick="mostrarSobre()">Sobre </button>
-        <button onclick="mostrarGaleria('galeria-japa')">Japamalas</button>
-        <button onclick="mostrarGaleria('galeria-colar')">Colar de mesa</button>
-        <button onclick="mostrarComoUsar()">Como usar</button>
-        <button onclick="mostrarContato()">Contato</button>
     </div>
+
+    <nav class="nav-row">
+        <div class="buttons">
+            <button onclick="mostrarInicio()">Início</button>
+            <button onclick="mostrarSobre()">Sobre </button>
+            <button onclick="mostrarGaleria('galeria-colar')">Colar de mesa</button>
+            <button onclick="mostrarGaleria('galeria-japa')">Japamalas</button>
+            <button onclick="mostrarComoUsar()">Como usar</button>
+            <button onclick="mostrarCuriosidades()">Curiosidades</button>
+            <button onclick="mostrarPeçajaoseu()">Peça já o seu!</button>
+            <a href="https://api.whatsapp.com/send?phone=5551998026699" target="_blank"></a>
+            <button onclick="toggleFAQ()">Perguntas Frequentes</button>
+            <button onclick="mostrarContato()">Contato</button> 
+
+
+<div id="faq-container" class="faq" style="display: none;">
+  <div class="faq-item">
+    <h3>O que é um Japamala?</h3>
+    <p>O Japamala é um colar de 108 contas usado em práticas de meditação e oração, tradicional no hinduísmo e budismo.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Qual a diferença entre Japamala e Colar de Mesa?</h3>
+    <p>O Japamala é utilizado na meditação, enquanto o Colar de Mesa é um item decorativo para ambientes.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Posso personalizar meu colar?</h3>
+    <p>Sim, você pode escolher cores, pedras e tamanhos para deixar seu colar exclusivo.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Vocês entregam para todo o Brasil?</h3>
+    <p>Sim, enviamos para todo o Brasil pelos Correios e transportadoras.</p>
+  </div>
+</div>
+
+
+        </div>
+
+        </div>
+    </nav>
+   
 
     <div class="section-content">
+        <div id="curiosidades-texto" style="display: none;">
+            Os Japamalas têm origem nas tradições hinduístas e budistas, sendo usados como
+            instrumentos de meditação e oração. Cada conta simboliza um mantra recitado, e
+            o número tradicional de 108 contas representa os desejos e desafios que buscamos
+            superar ao longo da vida. Por isso, além de belos, carregam significados profundos
+            de equilíbrio, proteção e espiritualidade. Com o tempo, os Japamalas ultrapassaram
+            o universo espiritual e ganharam novas formas de uso. Hoje, também aparecem como colares
+            de mesa decorativos, trazendo energia positiva e estilo único para o lar. Cada peça é feita
+            à mão, o que garante exclusividade e charme em cada detalhe. Na decoração, esses colares podem
+            ser usados sobre livros, bandejas, vasos ou até pendurados em maçanetas. Eles combinam perfeitamente
+            com estilos como boho chic e escandinavo, trazendo um toque natural, acolhedor e cheio de significado.
+            Além de embelezar, os colares de mesa lembram a importância da presença e da intenção em nossa rotina,
+            transformando os ambientes em espaços de paz, conexão e harmonia.
+        </div>
+
         <div id="sobre-texto" style="display: none;">
-            O Japamala, também conhecido como mala, é um cordão de 108 contas ou seus múltiplos,
-            usado em práticas de meditação e oração, originário da Índia e adotado pelo hinduísmo e
-            budismo. O nome deriva do sânscrito "japa" (murmurar, sussurrar) e "mala" (guirlanda, colar).
-            O Japamala serve como um contador espiritual, auxiliando na recitação de mantras e na
-            concentração durante a meditação.
+            A Arte by_ro, está completando 5 anos. Nasceu em plena pandemia, produzindo Japamalas.
+            Formou-se com intuito de se reinventar ante a inquietação que o momento criara. 
+            Nos primeiros três meses, em busca de outros produtos para agregar, surge os Colares
+            de Mesa e Pêndulos de Porta ou parede. Desde então foi crescendo a vontade de criar 
+            peças novas e modernas sempre preocupada em transformar materiais naturais em arte, 
+            com criatividade, responsabilidade e acima de tudo com muito Amor e Carinho assim 
+            alcançando novos clientes.
+
         </div>
 
         <div id="galeria-japa" style="display: none;">
-            <img src="./assets/japamala2.jpg" alt="Foto 2" width="150">
-            <img src="./assets/japamala budista 108 contas.jpg" alt="1" width="150">
-            <img src="./assets/japamala 05.jpg" alt="Foto 4" width="150">
-            <img src="./assets/japamala 06.jpg" alt="Foto 3" width="150">
-            <img src="./assets/japamala 04.jpg" alt="Foto 3" width="150">
+            <a href="./assets/japamala 04.jpg" target="_blank">
+                <img src="./assets/japamala 04.jpg" alt="Foto 3" width="150">
+            </a>
+            <a href="./assets/japamala2.jpg" target="_blank">
+                <img src="./assets/japamala2.jpg" alt="Foto 2" width="150">
+            </a>
+            <a href="./assets/japamala budista 108 contas.jpg" target="_blank">
+                <img src="./assets/japamala budista 108 contas.jpg" alt="1" width="150">
+            </a>
+            <a href="./assets/japamala1.jpg" target="_blank ">
+                <img src="./assets/japamala1.jpg" alt="Foto 3" width="150">
+            </a>
+            <a href="./assets/japamala 05.jpg" target="_blank">
+                <img src="./assets/japamala 05.jpg" alt="Foto 4" width="150">
+            </a>
+
+            <a href="./assets/japamala 06.jpg" target="_blank">
+                <img src="./assets/japamala 06.jpg" alt="Foto 3" width="150">
+            </a>
         </div>
 
         <div id="galeria-colar" style="display: none;">
-            <img src="./assets/colar de mesa 02.jpg" alt="Foto 2" width="150">
-            <img src="./assets/colar de mesa 01.jpg" alt="1" width="150">
-            <img src="./assets/colar de mesa 04.jpg" alt="Foto 4" width="150">
-            <img src="./assets/colar de mesa 03.jpg" alt="Foto 3" width="150">
-            <img src="./assets/colar de mesa 05.jpg" alt="Foto 5" width="150">
-
-
+            <a href="./assets/colar de mesa 02.jpg" target="_blank">
+                <img src="./assets/colar de mesa 02.jpg" alt="Foto 2" width="150">
+            </a>
+            <a href="./assets/colar de mesa 01.jpg" target="_blank">
+                <img src="./assets/colar de mesa 01.jpg" alt="1" width="150">
+            </a>
+            <a href="./assets/colar de mesa 04.jpg" target="_blank">
+                <img src="./assets/colar de mesa 04.jpg" alt="Foto 4" width="150">
+            </a>
+            <a href="./assets/colar de mesa 03.jpg" target="_blank">
+                <img src="./assets/colar de mesa 03.jpg" alt="Foto 3" width="150">
+            </a>
+            <a href="./assets/colar de mesa 05.jpg" target="_blank">
+                <img src="./assets/colar de mesa 05.jpg" alt="Foto 5" width="150">
+            </a>
 
         </div>
 
@@ -68,29 +194,42 @@
             Para usar o Japamala, segure-o com a mão direita usando o polegar e dedo médio,
             e passe cada conta entre os dedos enquanto recita um mantra ou como as quatro
             frases do Ho'oponopono. Comece pela conta principal e siga em sentido horário.
+            <p></p>
+            <a href="https://youtu.be/TM5aeSnlFaw" target="_blank">veja o vídeo</a>
+            <p></p>
+            <a href="https://youtu.be/Vjrf599rmm0" target="_blank">Veja o vídeo</a>
+            <p></p>
+            <a href="https://youtu.be/1-m0FVypBMA?list=PLGgP7ZxORvJydtTuMbtHiUD1_873m8N93" target="_blank">Veja o
+                vídeo</a>
+            <p></p>
+            <a href="https://youtu.be/wz0JpiTCB9M?list=PLGgP7ZxORvJydtTuMbtHiUD1_873m8N93" target="_blank">Veja o
+                vídeo</a>
         </div>
 
         <div id="contato-texto" style="display: none;">
-            Instagram: @arteby_ro /
-            WhatsApp: (51) 99802-6699
+            Instagram: @arteby_ro <p></p> WhatsApp: (51) 99802-6699
         </div>
-          <div class="inicio-container">
-        <div id="inicio-texto">
-            <h2>Bem-vindo ao Arte by Rô!</h2>
-            <p>Explore nossa coleção de Japamalas e Colares de Mesa feitos com carinho e dedicação.</p>
-            <p>Cada peça é única, criada para trazer beleza e significado ao seu dia a dia.</p>
-            <p>Navegue pelas seções para saber mais sobre nossos produtos e como usá-los.</p>
-            Fique à vontade para entrar em contato conosco para qualquer dúvida ou pedido especial.
-        </div>
-        <div id="frases-hooponopono">
-            <strong>As quatro frases centrais do Ho'oponopono:</strong><br><br>
-            <b>"Eu sinto muito":</b> Reconhece a responsabilidade pessoal pelas memórias que são compartilhadas e que causam dor, tanto em si mesmo quanto nos outros.<br><br>
-            <b>"Me perdoe":</b> Pede perdão pelas memórias que a pessoa carrega, assumindo a responsabilidade por tê-las atraído para si.<br><br>
-            <b>"Eu te amo":</b> Declara amor por essas memórias, pois o amor tem o poder de transmutar a energia negativa.<br><br>
-            <b>"Sou grato":</b> Agradece a oportunidade de limpar e liberar essas memórias, o que leva à cura e à libertação.
-        </div>
+        <div class="inicio-container">
+            <div id="inicio-texto">
+                <h3>Bem-vindo ao Arte by ro!</h3>
+                <p>Explore nossa coleção de Colares de Mesa e Japamalas feitos com carinho e dedicação.</p>
+                <p>Cada peça é única, criada para trazer beleza e significado ao seu dia a dia.</p>
+                <p>Navegue pelas seções para saber mais sobre nossos produtos e como usá-los.</p>
+                Fique à vontade para entrar em contato conosco para qualquer dúvida ou pedido especial.
+            </div>
+            <div id="frases-hooponopono">
+                <strong>As quatro frases centrais do Ho'oponopono:</strong><br><br>
+                <b>"Eu sinto muito":</b> Reconhece a responsabilidade pessoal pelas memórias que são compartilhadas e
+                que causam dor, tanto em si mesmo quanto nos outros.<br><br>
+                <b>"Me perdoe":</b> Pede perdão pelas memórias que a pessoa carrega, assumindo a responsabilidade por
+                tê-las atraído para si.<br><br>
+                <b>"Eu te amo":</b> Declara amor por essas memórias, pois o amor tem o poder de transmutar a energia
+                negativa.<br><br>
+                <b>"Sou grato":</b> Agradece a oportunidade de limpar e liberar essas memórias, o que leva à cura e à
+                libertação.
+            </div>
 
-        
+
         </div>
 
         <footer class="footer">
