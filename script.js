@@ -5,8 +5,8 @@ const SECTIONS = [
   'como-usar-texto',
   'contato-texto',
   'curiosidades-texto',
-  'inicio-texto',        // se você tiver uma seção inicio
-  'frases-hooponopono',  // se existir
+  'inicio-texto',
+  'frases-hooponopono',        // se você tiver uma seção inicio
   'faq-container'
 ];
 
@@ -71,10 +71,22 @@ function toggleFAQ() {
   }
 }
 
+
 // opcional: ao carregar a página, esconda tudo e mostre a seção inicial (se houver)
 document.addEventListener('DOMContentLoaded', () => {
+  // Chamada única para esconder todos os elementos
   esconderTudo();
-  const inicio = document.getElementById('inicio-texto');
-  if (inicio) inicio.style.display = 'block';
+  
+  // Tenta mostrar o primeiro elemento
+  const inicioTexto = document.getElementById('inicio-texto');
+  if (inicioTexto) {
+    inicioTexto.style.display = 'block';
+  }
+  
+  // Tenta mostrar o segundo elemento
+  const frasesHooponopono = document.getElementById('frases-hooponopono');
+  if (frasesHooponopono) {
+    frasesHooponopono.style.display = 'block';
+  }
 });
 
