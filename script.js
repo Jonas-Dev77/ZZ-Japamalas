@@ -6,7 +6,7 @@ const SECTIONS = [
   'contato-texto',
   'curiosidades-texto',
   'inicio-texto',
-  'frases-hooponopono',        // se você tiver uma seção inicio
+  'frases-hooponopono',
   'faq-container'
 ];
 
@@ -19,74 +19,91 @@ function esconderTudo() {
 
 function mostrarInicio() {
   esconderTudo();
-  const el = document.getElementById('inicio-texto');
-  if (el) el.style.display = 'block';
+
+  const inicio = document.getElementById('inicio-texto');
+  if (inicio) inicio.style.display = 'block';
+
+  const frases = document.getElementById('frases-hooponopono');
+  if (frases) frases.style.display = 'block';
+
+  // Voltar para o topo da página
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function mostrarSobre() {
   esconderTudo();
   const el = document.getElementById('sobre-texto');
-  if (el) el.style.display = 'block';
+  if (el) {
+    el.style.display = 'block';
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function mostrarGaleria(id) {
   esconderTudo();
   const el = document.getElementById(id);
-  if (el) el.style.display = 'block';
+  if (el) {
+    el.style.display = 'block';
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function mostrarComoUsar() {
   esconderTudo();
   const el = document.getElementById('como-usar-texto');
-  if (el) el.style.display = 'block';
+  if (el) {
+    el.style.display = 'block';
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function mostrarContato() {
   esconderTudo();
   const el = document.getElementById('contato-texto');
-  if (el) el.style.display = 'block';
+  if (el) {
+    el.style.display = 'block';
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function mostrarCuriosidades() {
   esconderTudo();
   const el = document.getElementById('curiosidades-texto');
-  if (el) el.style.display = 'block';
+  if (el) {
+    el.style.display = 'block';
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function mostrarPeçajaoseu() {
   window.open("https://api.whatsapp.com/send?phone=5551998026699", "_blank");
 }
 
-// alterna o FAQ: se fechado, abre (e fecha as outras); se aberto, fecha
+// alterna o FAQ
 function toggleFAQ() {
   const faq = document.getElementById('faq-container');
-  if (!faq) return; // se não existir, nada a fazer
+  if (!faq) return;
 
   if (faq.style.display === 'block') {
     faq.style.display = 'none';
   } else {
-    // abrir o faq -> esconder todo o resto e abrir o faq
     esconderTudo();
     faq.style.display = 'block';
+    faq.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
 
-
-// opcional: ao carregar a página, esconda tudo e mostre a seção inicial (se houver)
+// ao carregar a página, mostra início + frases
 document.addEventListener('DOMContentLoaded', () => {
-  // Chamada única para esconder todos os elementos
   esconderTudo();
-  
-  // Tenta mostrar o primeiro elemento
-  const inicioTexto = document.getElementById('inicio-texto');
-  if (inicioTexto) {
-    inicioTexto.style.display = 'block';
-  }
-  
-  // Tenta mostrar o segundo elemento
-  const frasesHooponopono = document.getElementById('frases-hooponopono');
-  if (frasesHooponopono) {
-    frasesHooponopono.style.display = 'block';
-  }
+
+  const inicio = document.getElementById('inicio-texto');
+  if (inicio) inicio.style.display = 'block';
+
+  const frases = document.getElementById('frases-hooponopono');
+  if (frases) frases.style.display = 'block';
+
+  // Garantir que abre no topo
+  window.scrollTo({ top: 0 });
 });
 
