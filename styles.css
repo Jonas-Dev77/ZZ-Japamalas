@@ -412,6 +412,7 @@ figcaption {
         flex-direction: column;
         position: relative;
         z-index: 1;
+        margin-right: 2px;
     }
 
     figure {
