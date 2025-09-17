@@ -25,24 +25,28 @@ body {
 
 }
 
-.title, h1 {
+.title,
+h1 {
     font-weight: 600;
-    font-size:50px;
+    font-size: 50px;
     line-height: 82px;
     color: black;
     width: 400px;
     margin-top: 140px;
     margin-left: 20px;
 }
-.subtitle, h2 {
+
+.subtitle,
+h2 {
     box-shadow: rgb(21, 20, 20);
     margin-top: 1px;
     margin-left: 20px;
     font-size: 30px;
     line-height: 50px;
     font-weight: 500;
-    
+
 }
+
 .buttons {
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +54,7 @@ body {
     margin-top: 5px;
     justify-content: center;
     gap: 10px;
-      
+
 }
 
 button {
@@ -62,72 +66,82 @@ button {
     font-size: 16px;
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    transition: background 0.2s;  
+    transition: background 0.2s;
     height: 45px;
     white-space: nowrap;
     min-width: 138px;
-    
+
 }
+
 .toggle-FAQ {
     font-size: 16px;
-      
-}  
+
+}
 
 .nav-row {
-  display: flex;
-  align-items: center;
-  justify-content:space-between;
-  gap: 15px;
-  padding: 12px 20px;    /* ajuste se quiser mais/menos altura */
-  width: 100%;
-  box-sizing: border-box;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px 20px;
+    /* ajuste se quiser mais/menos altura */
+    width: 100%;
+    box-sizing: border-box;
+    gap: 10px;
 }
 
 button:hover {
     background-color: #d36604;
     /* Cor ao passar o mouse */
 }
+
 figure {
-  display: inline-block;  
-  margin: 10px;
-  text-align: left; 
-  max-width: 150px;     
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+    max-width: 150px;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 8px;
 }
 
 figcaption {
-  font-size: 14px;
-  color:white;
-  margin-top: 5px;
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+    line-height: 1.4;
 }
 
 .faq-toggle:hover {
-  background-color: #d36604;
+    background-color: #d36604;
 }
 
 .faq {
-  max-width: 800px;
-  margin: 20px auto;
-  background: rgba(255,255,255,0.08);
-  border-radius: 10px;
-  padding: 20px;
-  color: #fff;
-  
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    margin-top: 100px;
+
 }
 
 .faq-item {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .faq-item h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
-  color: #ff8c33;
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #ff8c33;
 }
 
 .faq-item p {
-  font-size: 16px;
-  line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 #inicio-texto {
@@ -154,7 +168,8 @@ figcaption {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
     /* Sombra leve */
 }
- #frases-hooponopono {
+
+#frases-hooponopono {
     margin-top: 20px;
     background: rgba(255, 255, 255, 0.08);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
@@ -162,84 +177,95 @@ figcaption {
     font-size: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
-    text-align: center;   
+    text-align: center;
 }
-        
+
 .inicio-container {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     width: 180%;
     margin-top: 5px;
     margin-bottom: 20px;
-    text-align: center;    
+    text-align: center;
 }
 
 #inicio-texto {
     text-align: center;
 }
-.galeria-japa, 
+
+.galeria-japa,
 .galeria-colar {
     scroll-behavior: smooth;
 
 }
 
 .carousel {
-  display: flex;
-  overflow-x: auto;
-  gap: 20px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .slide {
-  flex: none;
-  width: 200px;
-  scroll-snap-align: center;
+    flex: none;
+    width: 200px;
+    scroll-snap-align: center;
 }
 
 .slide img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+
 #depoimentos {
-  text-align: center;
-  padding: 50px 20px;
-  border-radius: 10px;
-  margin-right: 100px;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-right: 100px;
 }
 
 #depoimentos h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  margin-right: 130px;
-  color: white;
-  z-index: auto;
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-right: 130px;
+    color: white;
+    z-index: auto;
 }
 
 .depoimentos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 5px;
-  justify-items: center;
-  margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 5px;
+    justify-items: center;
+    margin-top: 10px;
 }
 
 .depoimentos-grid img {
-  width: 100%;
-  max-width: 100px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2); 
+    width: 100%;
+    max-width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+
 .section-content {
     width: 100%;
+    max-width: 900px;
+    /* limite de largura, fica mais elegante */
+    margin: 100px auto 20px auto;
+    /* centraliza horizontalmente e dá margem superior */
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: flex-start;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 20px;
+    align-items: center;
+    /* centraliza os elementos no eixo X */
+    text-align: center;
+    /* centraliza o texto */
+    padding: 0 20px;
+    justify-content: justify;
+    margin-top: 30px;
+    
 }
 
 .section-content img {
@@ -292,44 +318,48 @@ figcaption {
     transition: transform 0.2s;
     width: 90%;
     height: 90%;
-    
-   
+
+
 }
+
 .social-icons img:hover {
     transform: scale(1.1);
 }
 
 @media screen and (max-width: 600px) {
 
-    .title, h1 {
+    .title,
+    h1 {
         font-size: 25px;
         line-height: 50px;
         width: auto;
         margin-top: 180px;
         margin-left: 10px;
     }
-    
-    .subtitle, h2 {
+
+    .subtitle,
+    h2 {
         font-size: 16px;
         margin-top: 200px;
         position: absolute;
         margin-left: 10px;
         text-align: left;
 
-     
+
     }
+
     .social-icons img {
         width: 75%;
         height: 75%;
     }
-    
+
     .social-icons {
         margin-left: 10px;
         margin-top: 250px;
         position: absolute;
-        
+
     }
-    
+
     .buttons {
         display: flex;
         flex-direction: column;
@@ -337,20 +367,20 @@ figcaption {
         gap: 10px;
         width: 100%;
     }
-    
+
     button {
         width: 100%;
         box-sizing: border-box;
         margin: 5px 0;
     }
-    
+
     .section-content {
         padding-left: 10px;
         padding-right: 10px;
         font-size: 16px;
         width: 100%;
     }
-    
+
     .inicio-container {
         display: flex;
         flex-direction: column;
@@ -359,7 +389,7 @@ figcaption {
         line-height: 1.6;
         width: 100%;
     }
-    
+
     #frases-hooponopono {
         display: flex;
         flex-direction: column;
@@ -367,20 +397,37 @@ figcaption {
         margin-top: 3px;
         width: 100%;
     }
-    
+
     .footer {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    #depoimentos, h2 {
+
+    #depoimentos,
+    h2 {
         margin-top: -20px;
         width: 100%;
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         position: relative;
         z-index: 1;
-
     }
-   
+
+    figure {
+        display: block;
+        /* ocupa linha inteira */
+        max-width: 100%;
+        /* deixa imagem responsiva */
+        margin: 20px auto;
+        /* centraliza no mobile */
+    }
+
+    figcaption {
+        font-size: 14px;
+        /* um pouco maior pra leitura no celular */
+        padding: 0 10px;
+        /* respiro nas laterais */
+    }
+
 }
