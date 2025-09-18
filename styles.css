@@ -193,10 +193,54 @@ figcaption {
     text-align: center;
 }
 
-.galeria-japa,
-.galeria-colar {
+#galeria-japa,
+#galeria-colar {
     scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    gap: 10px;
+    align-items: center;
+    
+}
+#galeria-japa figure,
+#galeria-colar figure {
+    margin-top: 0;
+    padding: 10px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    position: relative;
+    text-align: center; /* Centraliza todo o conteúdo */
+    align-self: start; 
+}
 
+/* Estilizando as imagens */
+#galeria-japa figure img,
+#galeria-colar figure img {
+    width: 100% !important; /* Sobrescreve o width="150" do HTML */
+    height: 200px; /* Altura fixa para uniformizar */
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+/* Estilizando os links das imagens */
+#galeria-japa figure a,
+#galeria-colar figure a {
+    display: block;
+    text-decoration: none;
+}
+
+/* Estilizando os textos <figcaption> */
+#galeria-japa figcaption,
+#galeria-colar figcaption {
+    margin: 0;
+    line-height: 1.3;
+    font-size: 14px;
+    color: inherit; /* Usa a cor do texto pai */
+    min-height: 40px;
+    text-align: left;
+    display: block;
 }
 
 .carousel {
@@ -265,7 +309,7 @@ figcaption {
     padding: 0 20px;
     justify-content: justify;
     margin-top: 30px;
-    
+
 }
 
 .section-content img {
