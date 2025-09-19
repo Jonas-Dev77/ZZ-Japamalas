@@ -95,24 +95,7 @@ button:hover {
     /* Cor ao passar o mouse */
 }
 
-figure {
-    display: inline-block;
-    margin: 10px;
-    text-align: left;
-    max-width: 150px;
-}
 
-figure img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-figcaption {
-    font-size: 12px;
-    color: white;
-    margin-top: 5px;
-    line-height: 1.4;
-}
 
 .faq-toggle:hover {
     background-color: #d36604;
@@ -196,52 +179,57 @@ figcaption {
 #galeria-japa,
 #galeria-colar {
     scroll-behavior: smooth;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
-    gap: 10px;
-    align-items: center;
-    
+    display: flex;
+    flex-wrap: wrap !important;
+    flex-direction: row;
+    gap: 15px !important;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 #galeria-japa figure,
 #galeria-colar figure {
-    margin-top: 0;
-    padding: 10px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 10px;
-    position: relative;
-    text-align: center; /* Centraliza todo o conteúdo */
-    align-self: start; 
+    flex: 0 0 calc(25% - 12px) !important;
+    /* 4 colunas com gap */
+    min-width: 180px;
+    max-width: 250px !important;
+    margin: 0;
+    padding: 08px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    text-align: center;
+    align-self: flex-start;
 }
 
-/* Estilizando as imagens */
 #galeria-japa figure img,
 #galeria-colar figure img {
-    width: 100% !important; /* Sobrescreve o width="150" do HTML */
-    height: 200px; /* Altura fixa para uniformizar */
+    width: 100%;
+    height: 160px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 6px;
     display: block;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 10px auto;
 }
 
-/* Estilizando os links das imagens */
 #galeria-japa figure a,
 #galeria-colar figure a {
     display: block;
     text-decoration: none;
 }
 
-/* Estilizando os textos <figcaption> */
 #galeria-japa figcaption,
 #galeria-colar figcaption {
     margin: 0;
     line-height: 1.3;
-    font-size: 14px;
-    color: inherit; /* Usa a cor do texto pai */
-    min-height: 40px;
+    font-size: 12px;
+    color: white;
     text-align: left;
-    display: block;
+    margin-top: 5px;
 }
+
+
+
+
 
 .carousel {
     display: flex;
@@ -473,6 +461,24 @@ figcaption {
         /* um pouco maior pra leitura no celular */
         padding: 0 10px;
         /* respiro nas laterais */
+    }
+
+    @media (min-width: 1200px) {
+
+        .section-content,
+        #inicio-texto,
+        #sobre-texto,
+        #galeria-japa,
+        #galeria-colar,
+        #como-usar-texto,
+        #contato-texto,
+        #curiosidades-texto,
+        #faq-container {
+            max-width: 1200px;
+            /* trava largura máxima */
+            margin: 0 auto;
+            /* centraliza na tela */
+        }
     }
 
 }

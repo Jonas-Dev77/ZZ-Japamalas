@@ -43,7 +43,7 @@ function mostrarGaleria(id) {
   esconderTudo();
   const el = document.getElementById(id);
   if (el) {
-    el.style.display = 'block';
+    el.style.display = 'flex';
     el.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
