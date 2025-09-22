@@ -473,7 +473,12 @@ button:hover {
         #como-usar-texto,
         #contato-texto,
         #curiosidades-texto,
-        #faq-container {
+        #faq-container,
+        #depoimentos,
+        #frases-hooponopono,
+        #inicio-container,
+        #footer,
+        .buttons {
             max-width: 1200px;
             /* trava largura máxima */
             margin: 0 auto;
