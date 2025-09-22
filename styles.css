@@ -95,8 +95,6 @@ button:hover {
     /* Cor ao passar o mouse */
 }
 
-
-
 .faq-toggle:hover {
     background-color: #d36604;
 }
@@ -226,11 +224,6 @@ button:hover {
     text-align: left;
     margin-top: 5px;
 }
-
-
-
-
-
 .carousel {
     display: flex;
     overflow-x: auto;
@@ -341,7 +334,7 @@ button:hover {
     margin-left: 1380px;
     position: fixed;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   
 
 }
 
@@ -350,13 +343,12 @@ button:hover {
     transition: transform 0.2s;
     width: 90%;
     height: 90%;
-
-
 }
 
 .social-icons img:hover {
     transform: scale(1.1);
 }
+
 
 @media screen and (max-width: 600px) {
 
@@ -368,7 +360,6 @@ button:hover {
         margin-top: 180px;
         margin-left: 10px;
     }
-
     .subtitle,
     h2 {
         font-size: 16px;
@@ -376,20 +367,16 @@ button:hover {
         position: absolute;
         margin-left: 10px;
         text-align: left;
-
-
     }
-
     .social-icons img {
         width: 75%;
         height: 75%;
     }
-
     .social-icons {
         margin-left: 10px;
         margin-top: 250px;
         position: absolute;
-
+        gap: 2px;
     }
 
     .buttons {
