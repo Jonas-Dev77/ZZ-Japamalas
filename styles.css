@@ -15,7 +15,7 @@ body {
 
 /* TOP-BACKGROUND */
 .top-background {
-    background-image: url('./assets/img topbackground.webp');
+    background-image: url('./assets/img-topbackground.webp');
     background-size: cover;
     background-position: center;
     height: 280px;
